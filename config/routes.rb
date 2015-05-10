@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  
+  # points /about to the pages controller and the about action...looks in views/pages for about.html.erb
+  #rails generate controller pages - created the main controler
+  get '/about' => 'pages#about'
   root 'pages#home'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
