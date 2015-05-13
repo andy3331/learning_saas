@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  
+  #generating a few routes with below line for contacts
+  resources :contacts
   # points /about to the pages controller and the about action...looks in views/pages for about.html.erb
   #rails generate controller pages - created the main controler
   #so work flow is - rails generate controller pages - edit app/controllers/pages_controller.rb ... def Home (or page name) end
