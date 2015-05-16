@@ -13,6 +13,12 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
     
     if @contact.save
+      #creating 3 variables from entered information
+      name = params[:contact][:name]
+      email = params[:contact][:email]
+      body = params[:contact][:comments]
+      #calling contact_mailer.rb from mailers ...with parameters above
+      ContactMailer.contact_email(name, email, body).deliver
       #flash notice displays on screen when put above yield in application.html.erb layout
       #<div class = "container">
       #called a flash hash
