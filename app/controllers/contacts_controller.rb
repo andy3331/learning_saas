@@ -17,7 +17,7 @@ class ContactsController < ApplicationController
       name = params[:contact][:name]
       email = params[:contact][:email]
       body = params[:contact][:comments]
-      #calling contact_mailer.rb from mailers ...with parameters above
+      #calling contact_mailer.rb from mailers ...with parameters above. params hash used above
       ContactMailer.contact_email(name, email, body).deliver
       #flash notice displays on screen when put above yield in application.html.erb layout
       #<div class = "container">
