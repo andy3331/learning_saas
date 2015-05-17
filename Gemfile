@@ -12,6 +12,9 @@ end
 # Use SCSS for stylesheets
 gem 'sass-rails', '4.0.3'
 
+#user authentication
+gem 'devise', '3.4.1'
+
 #use bootstrap for styles
 gem 'bootstrap-sass', '3.3.1'
 #font awesome library for icons
