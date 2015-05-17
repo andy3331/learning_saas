@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   #generating a few routes with below line for contacts
   resources :contacts
   # points /about to the pages controller and the about action...looks in views/pages for about.html.erb
